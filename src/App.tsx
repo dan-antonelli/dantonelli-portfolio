@@ -2,9 +2,11 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <p>My portfolio</p>
-    </>
+    <div className="flex flex-col">
+      <div className="text-center">
+        <h1>Daniel Antonelli</h1>
+      </div>
+    </div>
   );
 }
 
