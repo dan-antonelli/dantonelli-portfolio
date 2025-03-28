@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-gap-4 mb-6">
+      <div className="flex flex-gap-1 mb-6">
         <a href="#" className="a-btn font-md p-1">
           projects
         </a>
