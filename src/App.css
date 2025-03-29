@@ -30,8 +30,24 @@ a:hover {
   gap: 1rem;
 }
 
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-center {
+  align-items: center;
+}
+
+.fit-content {
+  height: fit-content;
+}
+
 .text-center {
   text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
 }
 
 .mb-6 {
