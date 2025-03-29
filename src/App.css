@@ -78,28 +78,17 @@ a:focus::after {
   margin-bottom: 1rem;
 }
 
-/* Tablet styles */
-@media (max-width: 1024px) {
-  .container {
-    width: 90%;
-    max-width: 800px;
-  }
-
-  .title-container {
-    text-align: left;
-  }
-  
-  .title-container h1 {
-    font-size: 5rem;
-    word-break: break-word;
-    max-width: 12ch;
-    line-height: 0.9;
-  }
+.intro-container {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 32px 24px;
+  border: 2px solid #000;
+  background-color: rgba(248, 248, 248, 0.75);
 }
 
 .background-shapes {
   position: fixed;
-  top: 150px; /* Position below navbar */
+  top: 150px;
   left: 0;
   width: 100%;
   height: calc(100% - 150px);
@@ -129,6 +118,25 @@ a:focus::after {
   top: 25%;
   left: 40%;
   transform: rotate(25deg);
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .title-container {
+    text-align: left;
+  }
+  
+  .title-container h1 {
+    font-size: 5rem;
+    word-break: break-word;
+    max-width: 12ch;
+    line-height: 0.9;
+  }
 }
 
 /* Mobile styles */
