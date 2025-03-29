@@ -32,6 +32,13 @@ a:hover {
   cursor: pointer;
 }
 
+a:focus-visible {
+  outline: 3px solid #4dabf7;
+  border-radius: 2px;
+  position: relative;
+  transition: outline-color 0.2s ease-in-out;
+}
+
 a:focus {
   outline: none;
   position: relative;
@@ -68,6 +75,7 @@ a:focus::after {
 
 .title-container {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* Tablet styles */

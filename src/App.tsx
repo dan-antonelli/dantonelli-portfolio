@@ -7,7 +7,7 @@ function App() {
       <Background />
       <div className="container">
         <nav>
-          <a href="#" className="home">
+          <a href="#" className="home" title="home">
             <img src="/home.png" alt="home" />
           </a>
           <div className="nav-link-container">
