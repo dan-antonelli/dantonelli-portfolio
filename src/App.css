@@ -76,6 +76,7 @@ a:hover {
   text-decoration: none;
   border: 2px solid #000;
   font-size: 1.5rem;
+  padding: 4px 10px;
 }
 
 .font-md {
