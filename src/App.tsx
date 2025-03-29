@@ -40,7 +40,7 @@ function App() {
       </main>
       <footer>
         <p>
-          Contact me at{' '}
+          Contact me at
           <a href="mailto:danielanonelli.official@gmail.com" className="anchor">
             danielanonelli.official@gmail.com
           </a>
