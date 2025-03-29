@@ -50,6 +50,7 @@ a:focus::after {
 }
 
 .container {
+  position: relative;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -86,6 +87,40 @@ a:focus::after {
     max-width: 12ch;
     line-height: 0.9;
   }
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.rectangle {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+
+.circle {
+  top: 35%;
+  right: 15%;
+  transform: rotate(15deg);
+}
+
+.triangle {
+  bottom: 25%;
+  left: 25%;
+  transform: rotate(25deg);
 }
 
 /* Mobile styles */

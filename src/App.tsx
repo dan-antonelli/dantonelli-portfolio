@@ -1,8 +1,10 @@
 import './App.css';
+import Background from './Background';
 
 function App() {
   return (
     <div className="container">
+      <Background />
       <nav>
         <a href="#" className="home">
           <img src="/home.png" alt="home" />
