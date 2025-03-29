@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-gap-1 mb-6">
+        <img src="/home.png" alt="home" />
         <a href="#" className="a-btn font-md p-1">
           projects
         </a>
