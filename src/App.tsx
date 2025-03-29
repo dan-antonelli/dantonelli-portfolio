@@ -3,23 +3,17 @@ import './App.css';
 function App() {
   return (
     <div className="container">
-      <nav className="flex flex-jc-sb flex-ai-center mt-1 mb-6 w-100">
-        <a href="#">
+      <nav>
+        <a href="#" className="home">
           <img src="/home.png" alt="home" />
         </a>
-        <div className="flex flex-gap-1 fit-content">
-          <a href="#" className="a-btn font-md">
-            projects
-          </a>
-          <a href="#" className="a-btn font-md">
-            blog
-          </a>
-          <a href="#" className="a-btn font-md">
-            about
-          </a>
+        <div className="nav-link-container">
+          <a href="#">projects</a>
+          <a href="#">blog</a>
+          <a href="#">about</a>
         </div>
       </nav>
-      <div className="text-center">
+      <div className="title-container">
         <h1>Daniel Antonelli</h1>
       </div>
     </div>
