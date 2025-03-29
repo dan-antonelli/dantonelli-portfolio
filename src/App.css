@@ -90,11 +90,11 @@ a:focus::after {
 }
 
 .background-shapes {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 150px; /* Position below navbar */
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 150px);
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
@@ -102,24 +102,24 @@ a:focus::after {
 
 .shape {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
-.rectangle {
-  top: 20%;
-  left: 10%;
-  transform: rotate(-10deg);
+.square {
+  top: 5%;
+  left: 25%;
+  transform: rotate(-15deg);
 }
 
 .circle {
-  top: 35%;
-  right: 15%;
+  top: 8%;
+  left: 55%;
   transform: rotate(15deg);
 }
 
 .triangle {
-  bottom: 25%;
-  left: 25%;
+  top: 25%;
+  left: 40%;
   transform: rotate(25deg);
 }
 
