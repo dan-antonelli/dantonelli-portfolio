@@ -16,10 +16,10 @@ function App() {
             <a href="#">blog</a>
           </div>
         </nav>
-        <section className="title-container">
-          <h1>Daniel Antonelli</h1>
-        </section>
         <section className="intro-container">
+          <div className="title-container">
+            <h1>Daniel Antonelli</h1>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla risus mauris, in
             posuere dolor cursus at. Quisque augue augue, fringilla ut ipsum ut, elementum vehicula
