@@ -20,17 +20,19 @@ function App() {
           <div className="title-container">
             <h1>Daniel Antonelli</h1>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla risus mauris, in
-            posuere dolor cursus at. Quisque augue augue, fringilla ut ipsum ut, elementum vehicula
-            lacus. Quisque dui purus, faucibus et urna ac, viverra dignissim justo. Mauris ultrices
-            euismod diam, in pulvinar nunc ultricies eu. Nunc efficitur eleifend accumsan.
-            Pellentesque dapibus mauris vitae tortor semper iaculis. Morbi nisi nisl, pellentesque
-            et sem non, tempus imperdiet turpis. Morbi libero enim, congue ac nibh quis, dapibus
-            ornare dui. In laoreet, neque eu molestie maximus, lectus urna feugiat quam, at
-            consectetur mauris diam ac sapien. Pellentesque mollis eros at justo pretium, tempor
-            maximus est vehicula.
-          </p>
+          <div className="info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla risus mauris,
+              in posuere dolor cursus at. Quisque augue augue, fringilla ut ipsum ut, elementum
+              vehicula lacus. Quisque dui purus, faucibus et urna ac, viverra dignissim justo.
+              Mauris ultrices euismod diam, in pulvinar nunc ultricies eu. Nunc efficitur eleifend
+              accumsan. Pellentesque dapibus mauris vitae tortor semper iaculis. Morbi nisi nisl,
+              pellentesque et sem non, tempus imperdiet turpis. Morbi libero enim, congue ac nibh
+              quis, dapibus ornare dui. In laoreet, neque eu molestie maximus, lectus urna feugiat
+              quam, at consectetur mauris diam ac sapien. Pellentesque mollis eros at justo pretium,
+              tempor maximus est vehicula.
+            </p>
+          </div>
           <div className="avatar">
             <img src="/avatar.jpg" alt="avatar" />
           </div>

@@ -86,14 +86,14 @@ a:focus::after {
     "info avatar";
   gap: 1rem;
   background-color: rgba(248, 248, 248, 0.70);
-  grid-area: info;
 }
 
-.intro-container p {
+.info {
   border: 2px solid #000;
   font-size: 1.125rem;
   line-height: 1.75rem;
   padding: 32px 24px;
+  grid-area: info;
 }
 
 .avatar {
@@ -199,6 +199,7 @@ a:focus::after {
       "title title"
       "avatar avatar"
       "info info";
+    justify-items: center;
   }
 
   .title-container {
@@ -211,5 +212,10 @@ a:focus::after {
     max-width: none;
     word-break: normal;
     white-space: nowrap;
+  }
+
+  .info {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
