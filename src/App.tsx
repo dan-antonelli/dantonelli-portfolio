@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Background />
-      <div className="container">
+      <main className="container">
         <nav>
           <a href="#" className="home" title="home">
             <img src="/home.png" alt="home" />
@@ -16,10 +16,10 @@ function App() {
             <a href="#">blog</a>
           </div>
         </nav>
-        <div className="title-container">
+        <section className="title-container">
           <h1>Daniel Antonelli</h1>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 }
