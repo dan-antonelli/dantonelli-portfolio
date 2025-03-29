@@ -38,6 +38,15 @@ function App() {
           </div>
         </section>
       </main>
+      <footer>
+        <p>
+          Contact me at{' '}
+          <a href="mailto:danielanonelli.official@gmail.com" className="anchor">
+            danielanonelli.official@gmail.com
+          </a>
+        </p>
+        <p>© {new Date().getFullYear()} Daniel Antonelli</p>
+      </footer>
     </>
   );
 }

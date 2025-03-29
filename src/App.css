@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
 
+body, html {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 body {
   background-color: #f8f8f8;
   font-family: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+main.container {
+  flex: 1;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -54,6 +69,11 @@ a:focus::after {
   border: 3px dashed #000;
   pointer-events: none;
   border-radius: 2px;
+}
+
+.anchor {
+  text-decoration: underline;
+  border: none;
 }
 
 .container {
@@ -113,6 +133,14 @@ a:focus::after {
 }
 
 .avatar {
+  border: 2px solid #000;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(248, 248, 248, 0.9);
   border: 2px solid #000;
 }
 
