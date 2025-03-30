@@ -3,6 +3,7 @@ import Background from './Background';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
         <Hero />
         <Contact />
       </main>
-      <footer>
-        <p>© {new Date().getFullYear()} Daniel Antonelli</p>
-      </footer>
+      <Footer />
     </>
   );
 }
