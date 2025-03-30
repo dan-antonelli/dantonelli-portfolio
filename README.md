@@ -11,6 +11,7 @@
 - fill out readme
 - maybe split css
 - dark mode
+- remove img transform on tablet and mobile based on click
 - util components for links
 - hook for several things, like copied state
 - change dvs to articles etc
