@@ -37,18 +37,20 @@ function App() {
             <img src="/avatar.jpg" alt="avatar" />
           </div>
         </section>
+        <section className="contact-container">
+          <div className="contact-box">
+            <p>
+              Contact me at
+              <a href="mailto:danielanonelli.official@gmail.com" className="contact-anchor">
+                danielanonelli.official@gmail.com
+              </a>
+            </p>
+          </div>
+        </section>
       </main>
-      <div className="footer-container">
-        <footer className="footer-box">
-          <p>
-            Contact me at
-            <a href="mailto:danielanonelli.official@gmail.com" className="anchor">
-              danielanonelli.official@gmail.com
-            </a>
-          </p>
-          <p>© {new Date().getFullYear()} Daniel Antonelli</p>
-        </footer>
-      </div>
+      <footer>
+        <p>© {new Date().getFullYear()} Daniel Antonelli</p>
+      </footer>
     </>
   );
 }

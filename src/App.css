@@ -71,9 +71,10 @@ a:focus::after {
   border-radius: 2px;
 }
 
-.anchor {
+.contact-anchor {
   text-decoration: underline;
   border: none;
+  font-weight: 700;
 }
 
 .container {
@@ -136,7 +137,7 @@ a:focus::after {
   border: 2px solid #000;
 }
 
-.footer-container {
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,20 +145,28 @@ a:focus::after {
   margin-top: auto;
 }
 
-.footer-box {
+.contact-box {
   border: 2px solid #000;
   padding: 1.5rem 2rem;
   text-align: center;
-  max-width: 400px;
+  max-width: 600px;
   background-color: rgba(248, 248, 248, 0.9);
 }
 
-.footer-box p {
+.contact-box p {
   margin: 0.5rem 0;
 }
 
-.footer-box .anchor {
-  margin-left: 0.5rem;
+footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .background-shapes {
