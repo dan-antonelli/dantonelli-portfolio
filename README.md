@@ -9,3 +9,5 @@
 - code splitting/lazy loading
 - add accessible features
 - fill out readme
+- maybe split css
+- dark mode
