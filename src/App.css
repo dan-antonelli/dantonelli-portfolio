@@ -317,4 +317,40 @@ footer p {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .contact-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+  
+  .contact-box {
+    width: 100%;
+    max-width: 90%;
+    padding: 1rem;
+  }
+  
+  .contact-box p {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-anchor {
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+  
+  .social-contact {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .social-contact-anchor {
+    font-size: 1rem;
+    padding: 2px 5px;
+  }
 }
