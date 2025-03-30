@@ -46,7 +46,7 @@ export default function Hero() {
         </p>
       </div>
       <div className="avatar">
-        <img src="/avatar.jpg" alt="avatar" />
+        <img src="/avatar.jpg" alt="Daniel Antonelli, frontend developer portrait" />
       </div>
     </section>
   );
