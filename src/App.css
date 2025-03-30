@@ -216,27 +216,6 @@ a:focus::after {
   border: 2px solid #000;
 }
 
-.project-anchor {
-  text-decoration: none;
-  border: none;
-}
-
-.project-anchor:hover {
-  outline: none;
-}
-
-.project-anchor:focus::after {
-  content: none;
-}
-
-.project-anchor:focus {
-  outline: none;
-}
-
-.project-anchor:focus-visible {
-  outline: none;
-}
-
 .project {
   border: 2px solid #000;
   position: relative;
@@ -244,9 +223,29 @@ a:focus::after {
   margin-bottom: 2rem;
 }
 
+.project-description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  padding: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-anchor {
+  text-decoration: underline;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0px;
+}
+
 .project-title, .project-description {
   padding: 1rem;
-  background-color: #FFF;
 }
 
 .project::after {
