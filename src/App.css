@@ -28,6 +28,7 @@ h1 {
 p {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 400;
 }
 
 nav {
@@ -73,11 +74,11 @@ a:focus::after {
   bottom: -8px;
   border: 3px dashed #000;
   pointer-events: none;
-  border-radius: 2px;
 }
 
 .contact-anchor {
   text-decoration: underline;
+  text-underline-offset: 2px;
   border: none;
   font-size: 1.25rem;
   font-weight: 700;
@@ -95,11 +96,11 @@ a:focus::after {
   bottom: -3px;
   border: 3px dashed #000;
   pointer-events: none;
-  border-radius: 2px;
 }
 
 .social-contact-anchor {
   text-decoration: underline;
+  text-underline-offset: 2px;
   border: none;
   font-weight: 700;
   position: relative;
@@ -116,7 +117,27 @@ a:focus::after {
   bottom: -0.5px;
   border: 3px dashed #000;
   pointer-events: none;
-  border-radius: 2px;
+}
+
+.info-anchor {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: relative;
+  padding: 0px 4px 0px 4px;
+}
+
+.info-anchor:focus::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  right: -1px;
+  bottom: -3px;
+  border: 2px dashed #000;
+  pointer-events: none;
 }
 
 .container {
@@ -157,6 +178,14 @@ a:focus::after {
   line-height: 1.75rem;
   padding: 32px 24px;
   grid-area: info;
+}
+
+.info p {
+  margin-bottom: 2rem;
+}
+
+.info p:last-child {
+  margin-bottom: 0;
 }
 
 .avatar {

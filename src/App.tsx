@@ -43,9 +43,8 @@ function App() {
           <img src="/home.png" alt="home" />
         </a>
         <div className="nav-link-container">
-          <a href="#">about</a>
           <a href="#">projects</a>
-          <a href="#">blog</a>
+          <a href="#">about</a>
         </div>
       </nav>
       <main className="container">
@@ -55,15 +54,43 @@ function App() {
           </div>
           <div className="info">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla risus mauris,
-              in posuere dolor cursus at. Quisque augue augue, fringilla ut ipsum ut, elementum
-              vehicula lacus. Quisque dui purus, faucibus et urna ac, viverra dignissim justo.
-              Mauris ultrices euismod diam, in pulvinar nunc ultricies eu. Nunc efficitur eleifend
-              accumsan. Pellentesque dapibus mauris vitae tortor semper iaculis. Morbi nisi nisl,
-              pellentesque et sem non, tempus imperdiet turpis. Morbi libero enim, congue ac nibh
-              quis, dapibus ornare dui. In laoreet, neque eu molestie maximus, lectus urna feugiat
-              quam, at consectetur mauris diam ac sapien. Pellentesque mollis eros at justo pretium,
-              tempor maximus est vehicula.
+              I'm
+              <a
+                href="https://www.linkedin.com/in/dan-antonelli/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="linkedin"
+                className="info-anchor"
+              >
+                Daniel
+              </a>
+              , a frontend developer @
+              <a
+                href="https://www.epam.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="epam"
+                className="info-anchor"
+              >
+                EPAM
+              </a>
+              with over seven years of experience in building web applications. I specialize in
+              React but have worked with a range of technologies, from Java to JavaScript.
+            </p>
+            <p>
+              I'm passionate about solving challenging problems, communicating complex ideas
+              clearly, and understanding customer needs to create exceptional user experiences.
+            </p>
+            <p>
+              Check out my
+              <a href="#" title="projects" className="info-anchor">
+                projects
+              </a>
+              and
+              <a href="#" title="cv" className="info-anchor">
+                résumé
+              </a>
+              !
             </p>
           </div>
           <div className="avatar">
@@ -74,7 +101,7 @@ function App() {
           <div className="contact-box">
             <p>
               Contact me at
-              <a href="#" onClick={handleEmailClick} className="contact-anchor">
+              <a href="#" title="email" onClick={handleEmailClick} className="contact-anchor">
                 danielanonelli.official@gmail.com
               </a>
             </p>
@@ -83,6 +110,7 @@ function App() {
                 href="https://www.linkedin.com/in/dan-antonelli/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="linkedin"
                 className="social-contact-anchor"
               >
                 linkedin
@@ -91,6 +119,7 @@ function App() {
                 href="https://github.com/dan-antonelli"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="github"
                 className="social-contact-anchor"
               >
                 github
