@@ -15,3 +15,4 @@
 - hook for several things, like copied state
 - improve file paths
 - writings page, add it to info
+- FIX BACKGROUND
