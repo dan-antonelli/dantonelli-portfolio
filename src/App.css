@@ -25,6 +25,11 @@ h1 {
   line-height: 1;
 }
 
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -196,7 +201,7 @@ a:focus::after {
 .social-contact {
   display: flex;
   justify-content: flex-start;
-  margin-left: -10px;
+  margin-left: -8px;
 }
 
 .social-contact a {
@@ -331,7 +336,6 @@ footer p {
   }
   
   .contact-box p {
-    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
