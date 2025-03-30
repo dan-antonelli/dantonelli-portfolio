@@ -136,12 +136,28 @@ a:focus::after {
   border: 2px solid #000;
 }
 
-footer {
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
   margin-top: auto;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(248, 248, 248, 0.9);
+}
+
+.footer-box {
   border: 2px solid #000;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 400px;
+  background-color: rgba(248, 248, 248, 0.9);
+}
+
+.footer-box p {
+  margin: 0.5rem 0;
+}
+
+.footer-box .anchor {
+  margin-left: 0.5rem;
 }
 
 .background-shapes {
