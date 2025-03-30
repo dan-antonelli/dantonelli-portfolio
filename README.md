@@ -16,6 +16,7 @@
 - change dvs to articles etc
 - improve file paths
 - writings page, add it to info
+- loading states if using BE
 - FIX BACKGROUND
 - experiment with styled components and stuff
 - switch to css in js/styled components
