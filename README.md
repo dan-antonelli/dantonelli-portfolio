@@ -13,3 +13,4 @@
 - dark mode
 - util components for links
 - hook for several things, like copied state
+- improve file paths
