@@ -79,6 +79,7 @@ a:focus::after {
 .contact-anchor {
   text-decoration: underline;
   border: none;
+  font-size: 1.25rem;
   font-weight: 700;
   position: relative;
   margin-left: 6px;
