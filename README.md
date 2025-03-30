@@ -11,3 +11,5 @@
 - fill out readme
 - maybe split css
 - dark mode
+- util components for links
+- hook for several things, like copied state
