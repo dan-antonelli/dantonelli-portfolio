@@ -3,17 +3,19 @@ import './App.css';
 import Background from './Background';
 
 function App() {
-  const [copyText, setCopyText] = useState('Copy to clipboard');
   const [showCopied, setShowCopied] = useState(false);
 
-  // Add effect to hide the copied notification after some time
   useEffect(() => {
     if (showCopied) {
-      const timer = setTimeout(() => {
+      const handleDocumentClick = () => {
         setShowCopied(false);
-      }, 2000);
+      };
 
-      return () => clearTimeout(timer);
+      document.addEventListener('click', handleDocumentClick);
+
+      return () => {
+        document.removeEventListener('click', handleDocumentClick);
+      };
     }
   }, [showCopied]);
 
@@ -24,8 +26,9 @@ function App() {
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        setCopyText('Copied!');
         setShowCopied(true);
+
+        e.stopPropagation();
       })
       .catch((err) => {
         console.error('Failed to copy email: ', err);

@@ -202,7 +202,7 @@ a:focus::after {
   background-color: #f8f8f8;
   border: 2px solid #000;
   padding: 6px 12px;
-  transform: rotate(5deg);
+  transform: rotate(10deg);
   z-index: 10;
   font-weight: bold;
   animation: fadeIn 0.3s ease-out;
@@ -295,11 +295,11 @@ footer p {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: rotate(5deg) translateY(10px);
+    transform: rotate(10deg) translateY(10px);
   }
   to {
     opacity: 1;
-    transform: rotate(5deg) translateY(0);
+    transform: rotate(10deg) translateY(0);
   }
 }
 
