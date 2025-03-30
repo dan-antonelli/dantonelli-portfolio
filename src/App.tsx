@@ -45,6 +45,24 @@ function App() {
                 danielanonelli.official@gmail.com
               </a>
             </p>
+            <div className="social-contact">
+              <a
+                href="https://www.linkedin.com/in/dan-antonelli/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-contact-anchor"
+              >
+                linkedin
+              </a>
+              <a
+                href="https://github.com/dan-antonelli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-contact-anchor"
+              >
+                github
+              </a>
+            </div>
           </div>
         </section>
       </main>
