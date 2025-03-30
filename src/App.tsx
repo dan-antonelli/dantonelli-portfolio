@@ -5,17 +5,17 @@ function App() {
   return (
     <>
       <Background />
+      <nav className="container">
+        <a href="#" className="home" title="home">
+          <img src="/home.png" alt="home" />
+        </a>
+        <div className="nav-link-container">
+          <a href="#">about</a>
+          <a href="#">projects</a>
+          <a href="#">blog</a>
+        </div>
+      </nav>
       <main className="container">
-        <nav>
-          <a href="#" className="home" title="home">
-            <img src="/home.png" alt="home" />
-          </a>
-          <div className="nav-link-container">
-            <a href="#">about</a>
-            <a href="#">projects</a>
-            <a href="#">blog</a>
-          </div>
-        </nav>
         <section className="intro-container">
           <div className="title-container">
             <h1>Daniel Antonelli</h1>
@@ -38,7 +38,7 @@ function App() {
           </div>
         </section>
       </main>
-      <div className="footer-wrapper">
+      <div className="footer-container">
         <footer className="footer-box">
           <p>
             Contact me at
