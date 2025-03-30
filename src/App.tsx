@@ -1,7 +1,37 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import Background from './Background';
 
 function App() {
+  const [copyText, setCopyText] = useState('Copy to clipboard');
+  const [showCopied, setShowCopied] = useState(false);
+
+  // Add effect to hide the copied notification after some time
+  useEffect(() => {
+    if (showCopied) {
+      const timer = setTimeout(() => {
+        setShowCopied(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [showCopied]);
+
+  const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const email = 'danielanonelli.official@gmail.com';
+
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        setCopyText('Copied!');
+        setShowCopied(true);
+      })
+      .catch((err) => {
+        console.error('Failed to copy email: ', err);
+      });
+  };
+
   return (
     <>
       <Background />
@@ -41,7 +71,7 @@ function App() {
           <div className="contact-box">
             <p>
               Contact me at
-              <a href="mailto:danielanonelli.official@gmail.com" className="contact-anchor">
+              <a href="#" onClick={handleEmailClick} className="contact-anchor">
                 danielanonelli.official@gmail.com
               </a>
             </p>
@@ -63,6 +93,11 @@ function App() {
                 github
               </a>
             </div>
+            {showCopied && (
+              <div className="copied-notification">
+                <div>Copied</div>
+              </div>
+            )}
           </div>
         </section>
       </main>
