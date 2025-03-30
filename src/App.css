@@ -237,9 +237,9 @@ a:focus::after {
   background-image: repeating-linear-gradient(
     45deg,
     white,
-    white 3px,          /* Reduced from 5px to 3px */
-    #d9d9d9 3px,        /* Reduced from 5px to 3px */
-    #d9d9d9 6px         /* Reduced from 10px to 6px */
+    white 3px,
+    #d9d9d9 3px,
+    #d9d9d9 6px,
   );
 }
 
