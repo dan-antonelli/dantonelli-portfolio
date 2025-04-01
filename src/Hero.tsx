@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="intro-container">
@@ -35,9 +37,9 @@ export default function Hero() {
         </p>
         <p>
           Check out my
-          <a href="#projects" title="projects" className="info-anchor">
+          <Link to="/#projects" title="projects" className="info-anchor">
             projects
-          </a>
+          </Link>
           and
           <a href="#" title="cv" className="info-anchor">
             résumé

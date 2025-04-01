@@ -5,6 +5,7 @@
 - SEO
 - bundler?
 - tone down text size
+- maybe include font instead of import?
 - image compression
 - check on other browsers
 - mobile friendliness

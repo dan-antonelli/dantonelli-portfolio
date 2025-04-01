@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+
 export default function Navbar() {
   return (
     <nav className="container">
-      <a href="#" className="home" title="home">
+      <Link to="/" className="home" title="home">
         <img src="/home.png" alt="home" />
-      </a>
+      </Link>
       <div className="nav-link-container">
-        <a href="#" title="projects" className="main-link">
+        <Link to="/projects" className="main-link" title="projects">
           projects
-        </a>
-        <a href="#" title="about" className="main-link">
+        </Link>
+        <Link to="/about" className="main-link" title="about">
           about
-        </a>
+        </Link>
       </div>
     </nav>
   );
