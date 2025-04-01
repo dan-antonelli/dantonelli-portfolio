@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function PageNotFound() {
+export default function PageNotFoundPage() {
   return (
     <section className="not-found-container">
       <h1>404</h1>

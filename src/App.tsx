@@ -5,8 +5,7 @@ import Navbar from './Navbar';
 import Main from './MainContent';
 import Footer from './Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PageNotFound from './PageNotFound';
-
+import PageNotFoundPage from './pages/PageNotFoundPage';
 interface DefaultLayoutProps {
   children: ReactNode;
 }
@@ -32,9 +31,9 @@ function App() {
             </DefaultLayout>
           }
         />
-        <Route path="/projects" element={<PageNotFound />} />
-        <Route path="/about" element={<PageNotFound />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/projects" element={<PageNotFoundPage />} />
+        <Route path="/about" element={<PageNotFoundPage />} />
+        <Route path="*" element={<PageNotFoundPage />} />
       </Routes>
     </Router>
   );
