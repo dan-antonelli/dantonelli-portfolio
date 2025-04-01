@@ -587,6 +587,10 @@ footer p {
     margin-top: 2rem;
   }
 
+  .projects-page h1 {
+    font-size: 5rem;
+  }
+
   .project {
     width: 100%;
   }
