@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface Props {
   title: string;
   imagePath: string;
@@ -16,24 +18,24 @@ export default function ProjectCard({ title, imagePath, description }: Props) {
       <div className="project-description-container">
         <p className="project-description">{description}</p>
         <div className="project-links">
-          <a
-            href="#"
+          <Link
+            to="/project-site-url"
             target="_blank"
             rel="noopener noreferrer"
-            title="github"
+            title="site"
             className="project-anchor"
           >
             site
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/project-github-url"
             target="_blank"
             rel="noopener noreferrer"
             title="github"
             className="project-anchor"
           >
             github
-          </a>
+          </Link>
         </div>
       </div>
     </article>
