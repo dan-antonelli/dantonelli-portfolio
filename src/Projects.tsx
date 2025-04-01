@@ -7,11 +7,13 @@ interface Props {
 }
 
 export default function Projects({ isPreview }: Props) {
+  const displayedProjects = isPreview ? projects.slice(0, 3) : projects;
+
   return (
     <>
       <section id="projects" className="projects">
         <h2>Recent projects</h2>
-        {projects.map(({ title, imagePath, description }) => (
+        {displayedProjects.map(({ title, imagePath, description }) => (
           <ProjectCard title={title} imagePath={imagePath} description={description} />
         ))}
       </section>
