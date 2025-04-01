@@ -1,11 +1,18 @@
 # Portfolio
 
+## Development Guidelines
+
+### Line Endings
+This project uses LF (Line Feed) for line endings across all platforms to maintain consistency. 
+Please ensure your editor is configured to use LF line endings when working on this project.
+
 ## TODO
 
 - SEO
 - bundler?
 - tone down text size
 - maybe include font instead of import?
+- import orders
 - image compression
 - check on other browsers
 - mobile friendliness

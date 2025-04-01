@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check-line-endings": "node -e \"const fs=require('fs');const files=fs.readdirSync('.').filter(f=>f.endsWith('.ts')||f.endsWith('.tsx')||f.endsWith('.js')||f.endsWith('.jsx')||f.endsWith('.json')||f.endsWith('.css')||f.endsWith('.html'));const wrongLineEnding=files.filter(f=>{const content=fs.readFileSync(f,'utf8');return content.includes('\\r\\n')});if(wrongLineEnding.length>0){console.error('Files with CRLF line endings:',wrongLineEnding);process.exit(1);}else{console.log('All files have correct LF line endings.');}\""
   },
   "dependencies": {
     "react": "^19.0.0",
