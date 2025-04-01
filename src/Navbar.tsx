@@ -5,8 +5,12 @@ export default function Navbar() {
         <img src="/home.png" alt="home" />
       </a>
       <div className="nav-link-container">
-        <a href="#">projects</a>
-        <a href="#">about</a>
+        <a href="#" title="projects" className="main-link">
+          projects
+        </a>
+        <a href="#" title="about" className="main-link">
+          about
+        </a>
       </div>
     </nav>
   );

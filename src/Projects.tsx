@@ -17,7 +17,9 @@ export default function Projects() {
         />
       </section>
       <div className="more-projects">
-        <a href="#">more projects</a>
+        <a href="#" title="more projects" className="main-link">
+          more projects
+        </a>
       </div>
     </>
   );

@@ -57,6 +57,10 @@ a {
   font-weight: 500;
 }
 
+.main-link {
+  border: 3.5px solid #000;
+}
+
 a:hover {
   cursor: pointer;
 }
