@@ -5,7 +5,6 @@ import Navbar from './Navbar';
 import Main from './MainContent';
 import Footer from './Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Projects from './Projects';
 import PageNotFound from './PageNotFound';
 
 interface DefaultLayoutProps {
@@ -33,22 +32,8 @@ function App() {
             </DefaultLayout>
           }
         />
-        <Route
-          path="/projects"
-          element={
-            <DefaultLayout>
-              <Projects />
-            </DefaultLayout>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <DefaultLayout>
-              <></>
-            </DefaultLayout>
-          }
-        />
+        <Route path="/projects" element={<PageNotFound />} />
+        <Route path="/about" element={<PageNotFound />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>

@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useScrollToSection } from './hooks/useScrollToSection';
 
 export default function Hero() {
+  const scrollToSection = useScrollToSection();
+
+  const handleProjectsClick = (e: React.MouseEvent) => {
+    scrollToSection('projects', e);
+  };
+
   return (
     <section className="intro-container">
       <div className="title-container">
@@ -37,7 +44,12 @@ export default function Hero() {
         </p>
         <p>
           Check out my
-          <Link to="/#projects" title="projects" className="info-anchor">
+          <Link
+            to="#projects"
+            title="projects"
+            className="info-anchor"
+            onClick={handleProjectsClick}
+          >
             projects
           </Link>
           and
