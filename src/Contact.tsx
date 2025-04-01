@@ -1,35 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useCopyToClipboard } from './hooks/useCopyToClipboard';
 
 export default function Contact() {
-  const [showCopied, setShowCopied] = useState(false);
-
-  useEffect(() => {
-    if (showCopied) {
-      const handleDocumentClick = () => {
-        setShowCopied(false);
-      };
-
-      document.addEventListener('click', handleDocumentClick);
-
-      return () => {
-        document.removeEventListener('click', handleDocumentClick);
-      };
-    }
-  }, [showCopied]);
+  const email = 'danielanonelli.official@gmail.com';
+  const { showCopied, copyToClipboard } = useCopyToClipboard();
 
   const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    const email = 'danielanonelli.official@gmail.com';
-
-    navigator.clipboard
-      .writeText(email)
-      .then(() => {
-        setShowCopied(true);
-        e.stopPropagation();
-      })
-      .catch((err) => {
-        console.error('Failed to copy email: ', err);
-      });
+    copyToClipboard(email, e);
   };
 
   return (
