@@ -7,17 +7,17 @@ export default function Projects() {
         <h2>Recent projects</h2>
         <ProjectCard
           title="Webshop"
-          imagePath="/webshop.png"
+          imagePath="/projects/webshop.png"
           description="A webshop built with React."
         />
         <ProjectCard
           title="Tour agency"
-          imagePath="/tour-agency.png"
+          imagePath="/projects/tour-agency.png"
           description="A tour agency website created with HTML, CSS and vanilla JS."
         />
         <ProjectCard
           title="Jobs dashboard"
-          imagePath="/jobs.png"
+          imagePath="/projects/jobs.png"
           description="A job application tracker dashboard built with React."
         />
       </section>
