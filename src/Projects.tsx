@@ -8,12 +8,17 @@ export default function Projects() {
         <ProjectCard
           title="Webshop"
           imagePath="/webshop.png"
-          description="A webshop created with React."
+          description="A webshop built with React."
         />
         <ProjectCard
           title="Tour agency"
           imagePath="/tour-agency.png"
           description="A tour agency website created with HTML, CSS and vanilla JS."
+        />
+        <ProjectCard
+          title="Jobs dashboard"
+          imagePath="/jobs.png"
+          description="A job application tracker dashboard built with React."
         />
       </section>
       <div className="more-projects">

@@ -4,6 +4,8 @@
 
 - SEO
 - bundler?
+- tone down text size
+- image compression
 - check on other browsers
 - mobile friendliness
 - code splitting/lazy loading

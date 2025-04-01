@@ -296,6 +296,7 @@ a:focus::after {
 }
 
 .more-projects {
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
