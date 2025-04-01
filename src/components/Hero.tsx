@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useScrollToSection } from '../hooks/useScrollToSection';
+import { useScrollToSection } from '@hooks/useScrollToSection';
 
 export default function Hero() {
   const scrollToSection = useScrollToSection();

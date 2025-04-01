@@ -1,4 +1,4 @@
-import { useCopyToClipboard } from '../hooks/useCopyToClipboard';
+import { useCopyToClipboard } from '@hooks/useCopyToClipboard';
 
 export default function Contact() {
   const email = 'danielanonelli.official@gmail.com';

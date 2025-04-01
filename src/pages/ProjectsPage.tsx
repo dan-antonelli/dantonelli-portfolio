@@ -1,4 +1,4 @@
-import { Background, Footer, Navbar, Projects } from '../components';
+import { Background, Footer, Navbar, Projects } from '@components/index';
 
 export default function ProjectsPage() {
   return (
