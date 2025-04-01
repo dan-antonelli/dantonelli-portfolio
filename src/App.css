@@ -254,7 +254,7 @@ a:focus::after {
   margin-top: 6rem;
 }
 
-.projects h2 {
+.projects h2, .projects-page h1 {
   margin-bottom: 2cqi;
 }
 

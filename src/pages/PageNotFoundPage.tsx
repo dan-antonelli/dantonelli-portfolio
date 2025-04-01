@@ -7,7 +7,7 @@ export default function PageNotFoundPage() {
       <h2>Page Not Found</h2>
       <p>Oh no! It looks like the page you're looking for doesn't exist.</p>
       <Link to="/" className="main-link">
-        Return to Home
+        Back to Home
       </Link>
     </section>
   );
