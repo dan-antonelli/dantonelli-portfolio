@@ -4,9 +4,17 @@ interface Props {
   title: string;
   imagePath: string;
   description: string;
+  projectUrl: string;
+  githubUrl: string;
 }
 
-export default function ProjectCard({ title, imagePath, description }: Props) {
+export default function ProjectCard({
+  title,
+  imagePath,
+  description,
+  projectUrl,
+  githubUrl,
+}: Props) {
   return (
     <article className="project">
       <div className="project-title">
@@ -19,7 +27,7 @@ export default function ProjectCard({ title, imagePath, description }: Props) {
         <p className="project-description">{description}</p>
         <div className="project-links">
           <Link
-            to="/project-site-url"
+            to={`/${projectUrl}`}
             target="_blank"
             rel="noopener noreferrer"
             title="site"
@@ -28,7 +36,7 @@ export default function ProjectCard({ title, imagePath, description }: Props) {
             site
           </Link>
           <Link
-            to="/project-github-url"
+            to={`/${githubUrl}`}
             target="_blank"
             rel="noopener noreferrer"
             title="github"

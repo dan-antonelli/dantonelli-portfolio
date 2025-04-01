@@ -14,8 +14,8 @@ export default function Projects({ isPreview }: Props) {
     <>
       <section id="projects" className="projects">
         <h2>{title}</h2>
-        {displayedProjects.map(({ title, imagePath, description }) => (
-          <ProjectCard title={title} imagePath={imagePath} description={description} />
+        {displayedProjects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
         ))}
       </section>
       {isPreview && (
