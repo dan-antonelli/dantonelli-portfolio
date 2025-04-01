@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { projects } from './data/projects';
 import ProjectCard from './ProjectCard';
 
@@ -11,9 +12,9 @@ export default function Projects() {
         ))}
       </section>
       <div className="more-projects">
-        <a href="#" title="more projects" className="main-link">
+        <Link to="/projects" className="main-link" title="more projects">
           more projects
-        </a>
+        </Link>
       </div>
     </>
   );
