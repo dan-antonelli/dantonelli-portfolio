@@ -1,7 +1,4 @@
-import Background from '../components/Background';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import Projects from '../components/Projects';
+import { Background, Footer, Navbar, Projects } from '../components';
 
 export default function ProjectsPage() {
   return (
