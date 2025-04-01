@@ -92,14 +92,6 @@ export const projects: Project[] = [
     githubUrl: '',
   },
   {
-    id: 11,
-    title: 'Grocery List',
-    imagePath: `${imagePathPrefix}/grocery-list.png`,
-    description: 'An interactive grocery list application built with React.',
-    projectUrl: '',
-    githubUrl: '',
-  },
-  {
     id: 12,
     title: 'Sidebar and Modal',
     imagePath: `${imagePathPrefix}/sidebar-and-modal.png`,
