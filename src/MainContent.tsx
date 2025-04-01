@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <main className="container">
       <Hero />
-      <Projects />
+      <Projects isPreview />
       <Contact />
     </main>
   );

@@ -6,7 +6,7 @@ interface Props {
   isPreview: boolean;
 }
 
-export default function Projects({ isPreview = false }: Props) {
+export default function Projects({ isPreview }: Props) {
   return (
     <>
       <section id="projects" className="projects">
