@@ -5,7 +5,7 @@ export default function PageNotFound() {
     <section className="not-found-container">
       <h1>404</h1>
       <h2>Page Not Found</h2>
-      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <p>Oh no! It looks like the page you're looking for doesn't exist.</p>
       <Link to="/" className="main-link">
         Return to Home
       </Link>
