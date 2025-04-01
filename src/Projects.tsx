@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom';
 import { projects } from './data/projects';
 import ProjectCard from './ProjectCard';
 
-export default function Projects() {
+interface Props {
+  isPreview: boolean;
+}
+
+export default function Projects({ isPreview = false }: Props) {
   return (
     <>
       <section id="projects" className="projects">
@@ -11,11 +15,13 @@ export default function Projects() {
           <ProjectCard title={title} imagePath={imagePath} description={description} />
         ))}
       </section>
-      <div className="more-projects">
-        <Link to="/projects" className="main-link" title="more projects">
-          more projects
-        </Link>
-      </div>
+      {isPreview && (
+        <div className="more-projects">
+          <Link to="/projects" className="main-link" title="more projects">
+            more projects
+          </Link>
+        </div>
+      )}
     </>
   );
 }
