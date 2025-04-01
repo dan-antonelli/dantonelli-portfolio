@@ -12,7 +12,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - bundler?
 - tone down text size
 - maybe include font instead of import?
-- add link to project images
+- tilt project images on mobile and tablet
 - import orders
 - image compression
 - check on other browsers
@@ -34,3 +34,4 @@ Please ensure your editor is configured to use LF line endings when working on t
 - switch to css in js/styled components
 - rewrite to Angular
 - add backend
+- build pipeline, envs

@@ -92,6 +92,32 @@ a:focus::after {
   pointer-events: none;
 }
 
+.project-image-anchor {
+  border: none;
+  padding: 0;
+  font-size: initial;
+  font-weight: initial;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image-anchor:hover {
+  cursor: pointer;
+}
+
+.project-image-anchor:focus {
+  outline: none;
+}
+
+.project-image-anchor:focus::after {
+  display: none;
+}
+
+.project-image-anchor:focus-visible {
+  outline: none;
+}
+
 .contact-anchor {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -181,7 +207,7 @@ a:focus::after {
 
 .intro-container {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "title title"
     "info avatar";
   gap: 1rem;
@@ -442,7 +468,7 @@ footer p {
   .title-container {
     text-align: left;
   }
-  
+
   .title-container h1 {
     font-size: 5rem;
     word-break: break-word;
@@ -488,7 +514,7 @@ footer p {
 
   .intro-container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "title title"
       "avatar avatar"
       "info info";
@@ -498,7 +524,7 @@ footer p {
   .title-container {
     text-align: center;
   }
-  
+
   .title-container h1 {
     font-size: 2.5rem;
     line-height: 1;
@@ -517,31 +543,31 @@ footer p {
     margin: 0 auto;
     padding: 1.5rem 0;
   }
-  
+
   .contact-box {
     width: 100%;
     max-width: 90%;
     padding: 1rem;
   }
-  
+
   .contact-box p {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-anchor {
     margin-top: 5px;
     margin-left: 0;
     font-size: 1.1rem;
   }
-  
+
   .social-contact {
     justify-content: center;
     margin-left: 0;
     margin-top: 0.5rem;
   }
-  
+
   .social-contact-anchor {
     font-size: 1rem;
     padding: 2px 5px;
@@ -560,21 +586,21 @@ footer p {
     margin-right: 20px;
     margin-top: 2rem;
   }
-  
+
   .project {
     width: 100%;
   }
-  
+
   .project-title {
     padding: 1rem;
     background-color: #FFF;
   }
-  
+
   .project::after {
     width: 101%;
     left: 5px;
   }
-  
+
   .projects h2 {
     font-size: 2rem;
     text-align: center;
@@ -588,12 +614,12 @@ footer p {
     border: none;
     border-bottom: 1px solid rgb(224, 224, 224);
   }
-  
+
   .project-image-container {
     height: 220px;
     overflow: hidden;
   }
-  
+
   .project-image {
     width: 100%;
     height: 100%;
