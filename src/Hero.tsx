@@ -35,7 +35,7 @@ export default function Hero() {
         </p>
         <p>
           Check out my
-          <a href="#" title="projects" className="info-anchor">
+          <a href="#projects" title="projects" className="info-anchor">
             projects
           </a>
           and

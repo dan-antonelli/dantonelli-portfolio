@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 export default function Projects() {
   return (
     <>
-      <section className="projects">
+      <section id="projects" className="projects">
         <h2>Recent projects</h2>
         <ProjectCard
           title="Webshop"
