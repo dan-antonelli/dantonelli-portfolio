@@ -12,7 +12,7 @@ export default function Projects({ isPreview }: Props) {
   const projectsClass = isPreview ? 'projects' : 'projects-page';
 
   return (
-    <>
+    <main className="container">
       <section id="projects" className={projectsClass}>
         {isPreview ? <h2>{title}</h2> : <h1>{title}</h1>}
         {displayedProjects.map((project) => (
@@ -26,6 +26,6 @@ export default function Projects({ isPreview }: Props) {
           </Link>
         </div>
       )}
-    </>
+    </main>
   );
 }

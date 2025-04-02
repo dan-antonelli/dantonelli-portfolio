@@ -6,3 +6,4 @@ export { default as Main } from './MainContent';
 export { default as Navbar } from './Navbar';
 export { default as ProjectCard } from './ProjectCard';
 export { default as Projects } from './Projects';
+export { default as CV } from './CV';

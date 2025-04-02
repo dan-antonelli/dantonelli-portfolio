@@ -5,9 +5,7 @@ export default function ProjectsPage() {
     <>
       <Background />
       <Navbar />
-      <main className="container">
-        <Projects isPreview={false} />
-      </main>
+      <Projects isPreview={false} />
       <Footer />
     </>
   );
