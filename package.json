@@ -6,19 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "analyze": "tsc -b && vite build --mode=analyze",
     "lint": "eslint .",
     "preview": "vite preview",
     "check-line-endings": "node -e \"const fs=require('fs');const files=fs.readdirSync('.').filter(f=>f.endsWith('.ts')||f.endsWith('.tsx')||f.endsWith('.js')||f.endsWith('.jsx')||f.endsWith('.json')||f.endsWith('.css')||f.endsWith('.html'));const wrongLineEnding=files.filter(f=>{const content=fs.readFileSync(f,'utf8');return content.includes('\\r\\n')});if(wrongLineEnding.length>0){console.error('Files with CRLF line endings:',wrongLineEnding);process.exit(1);}else{console.log('All files have correct LF line endings.');}\""
   },
   "dependencies": {
-    "core-js": "^3.41.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^6.30.0",
-    "regenerator-runtime": "^0.14.1"
+    "react-router-dom": "^6.30.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.17",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
@@ -26,6 +26,8 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "terser": "^5.39.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"

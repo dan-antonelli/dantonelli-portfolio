@@ -1,10 +1,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
+export default defineConfig(({ mode }) => ({
+  plugins: [
+    react(),
+    mode === 'analyze' &&
+      visualizer({
+        open: true,
+        filename: 'dist/stats.html',
+        gzipSize: true,
+        brotliSize: true,
+      }),
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
@@ -15,7 +25,24 @@ export default defineConfig({
     },
   },
   build: {
-    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
-    polyfillModulePreload: true,
+    target: 'esnext',
+    polyfill: false,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
   },
-});
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
+  },
+}));
