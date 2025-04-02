@@ -250,11 +250,11 @@ a:focus::after {
   border: 2px solid #000;
 }
 
-.projects, .cv {
+.projects {
   margin-top: 6rem;
 }
 
-.projects h2, .projects-page h1 {
+.projects h2, .projects-page h1, .cv-page h1 {
   margin-bottom: 2cqi;
 }
 
@@ -587,13 +587,13 @@ footer p {
     margin-top: 2rem;
   }
 
-  .projects-page {
+  .projects-page, .cv-page {
     width: calc(100% - 40px);
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .projects-page h1 {
+  .projects-page h1, .cv-page h1 {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }

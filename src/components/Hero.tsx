@@ -53,9 +53,9 @@ export default function Hero() {
             projects
           </Link>
           and
-          <a href="#" title="cv" className="info-anchor">
+          <Link to="/cv" title="cv" className="info-anchor">
             résumé
-          </a>
+          </Link>
           !
         </p>
       </div>
