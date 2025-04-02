@@ -5,9 +5,7 @@ export default function CVPage() {
     <>
       <Background />
       <Navbar />
-      <main className="container">
-        <CV />
-      </main>
+      <CV />
       <Footer />
     </>
   );
