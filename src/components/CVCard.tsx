@@ -23,16 +23,19 @@ export default function CVCard({
 }: Props) {
   return (
     <article className="job">
+      <div className="job-date">{date}</div>
       <div className="job-title">
         <h3>{position}</h3>
       </div>
       <div>
         <a
-          href={`/${workplaceUrl}`}
+          href={workplaceUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="project-image-anchor"
-        />
+        >
+          {workplace}
+        </a>
       </div>
     </article>
   );

@@ -331,6 +331,19 @@ a:focus::after {
   margin-bottom: 2rem;
 }
 
+.job-date {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background-color: #f8f8f8;
+  border: 2px solid #000;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  z-index: 2;
+  transform: rotate(2deg);
+}
+
 .project-description-container, .job-description-container {
   display: flex;
   justify-content: space-between;
