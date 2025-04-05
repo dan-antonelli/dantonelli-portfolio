@@ -70,12 +70,10 @@ a {
   background-color: transparent;
   overflow: hidden;
   cursor: pointer;
-  /* Add these properties to ensure focusability */
   outline: none;
   text-decoration: none;
 }
 
-/* Clean button styles to ensure they work correctly */
 .button {
   color: #000;
   text-decoration: none;
@@ -147,17 +145,6 @@ a:focus {
   position: relative;
 }
 
-a:focus::after {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border: 3px dashed #000;
-  pointer-events: none;
-}
-
 .project-image-anchor, .job-image-anchor {
   border: none;
   padding: 0;
@@ -176,10 +163,6 @@ a:focus::after {
   outline: none;
 }
 
-.project-image-anchor:focus::after, .job-image-anchor:focus::after {
-  display: none;
-}
-
 .project-image-anchor:focus-visible, .job-image-anchor:focus-visible {
   outline: none;
 }
@@ -195,17 +178,6 @@ a:focus::after {
   padding: 3px 4px;
 }
 
-.contact-anchor:focus::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -2px;
-  right: -2px;
-  bottom: -3px;
-  border: 3px dashed #000;
-  pointer-events: none;
-}
-
 .social-contact-anchor {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -216,17 +188,6 @@ a:focus::after {
   padding: 2px 2px;
 }
 
-.social-contact-anchor:focus::after {
-  content: '';
-  position: absolute;
-  top: -0.5px;
-  left: -4px;
-  right: -4px;
-  bottom: -0.5px;
-  border: 3px dashed #000;
-  pointer-events: none;
-}
-
 .info-anchor {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -235,17 +196,6 @@ a:focus::after {
   font-weight: 700;
   position: relative;
   padding: 0px 4px 0px 4px;
-}
-
-.info-anchor:focus::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -1px;
-  right: -1px;
-  bottom: -3px;
-  border: 2px dashed #000;
-  pointer-events: none;
 }
 
 .container {
@@ -367,25 +317,6 @@ a:focus::after {
 
 .project-title, .project-description, .job-title, .job-description {
   padding: 1rem;
-}
-
-.project::after, .job::after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 5px;
-  width: 101%;
-  height: 101%;
-  border: 2px solid #000;
-  z-index: -1;
-  background-color: #FFF;
-  background-image: repeating-linear-gradient(
-    45deg,
-    white,
-    white 3px,
-    #d9d9d9 3px,
-    #d9d9d9 6px
-  );
 }
 
 .project-image-container {
@@ -733,11 +664,6 @@ nav.container {
   .project-title, .job-title {
     padding: 1rem;
     background-color: #FFF;
-  }
-
-  .project::after {
-    width: 101%;
-    left: 5px;
   }
 
   .projects h2 {
