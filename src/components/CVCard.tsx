@@ -29,7 +29,13 @@ export default function CVCard({
           {position}
           <span className="workplace-wrapper">
             <span className="workplace-at">@</span>
-            <a href={workplaceUrl} target="_blank" rel="noopener noreferrer" className="job-anchor">
+            <a
+              href={workplaceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="job-anchor"
+              title={workplace}
+            >
               {workplace}
             </a>
           </span>
