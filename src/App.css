@@ -356,7 +356,7 @@ a:focus::after {
   padding: 1rem;
 }
 
-.project::after {
+.project::after, .job::after {
   content: '';
   position: absolute;
   top: 8px;
