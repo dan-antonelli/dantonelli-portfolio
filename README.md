@@ -12,6 +12,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - bundler?
 - add contact form
 - add contact to each page?
+- add resume page as reference
 - download CV
 - bolden technology text
 - resume: footer to bottom
