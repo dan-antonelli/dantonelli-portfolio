@@ -569,7 +569,10 @@ nav.container {
   }
 
   .container {
-    width: 95%;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   nav {
