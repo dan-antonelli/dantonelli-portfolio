@@ -7,10 +7,10 @@ export default function Navbar() {
         <img src="/home.png" alt="home" />
       </Link>
       <div className="nav-link-container">
-        <Link to="/projects" className="main-link" title="projects">
+        <Link to="/projects" className="button" title="projects">
           projects
         </Link>
-        <Link to="/cv" className="main-link" title="about">
+        <Link to="/cv" className="button" title="cv">
           résumé
         </Link>
       </div>

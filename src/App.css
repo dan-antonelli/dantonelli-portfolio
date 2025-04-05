@@ -61,8 +61,77 @@ a {
   font-weight: 500;
 }
 
-.main-link {
+.button {
   border: 3.5px solid #000;
+  position: relative;
+  z-index: 1;
+  color: #000;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  /* Add these properties to ensure focusability */
+  outline: none;
+  text-decoration: none;
+}
+
+/* Clean button styles to ensure they work correctly */
+.button {
+  color: #000;
+  text-decoration: none;
+  border: 3.5px solid #000;
+  font-size: 1.5rem;
+  padding: 4px 10px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+
+/* The spreading background effect */
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #000000;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+/* Hover effect */
+.button:hover {
+  color: #ffffff;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+/* Focus styles */
+.button:focus-visible {
+  outline: 3px solid #4dabf7;
+  outline-offset: 2px;
+}
+
+.button:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.button:focus::before {
+  width: 100%;
+}
+
+/* Simple active state for feedback */
+.button:active {
+  transform: scale(0.98);
 }
 
 a:hover {
@@ -420,7 +489,7 @@ footer p {
   margin-bottom: 2rem;
 }
 
-.not-found-container .main-link {
+.not-found-container .button {
   display: inline-block;
 }
 

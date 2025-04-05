@@ -21,7 +21,7 @@ export default function Projects({ isPreview }: Props) {
       </section>
       {isPreview && (
         <div className="more-projects">
-          <Link to="/projects" className="main-link" title="more projects">
+          <Link to="/projects" className="button" title="more projects">
             more projects
           </Link>
         </div>
