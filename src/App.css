@@ -77,6 +77,54 @@ a {
   outline-offset: 4px;
 }
 
+.button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #4dabf7;
+  border-radius: 4px; /* Consistent with home focus style */
+  outline-offset: 4px; /* Consistent with home focus style */
+  position: relative;
+  transition: outline-color 0.2s ease-in-out;
+}
+
+/* Override any conflicting styles */
+.project-image-anchor:focus-visible,
+.job-image-anchor:focus-visible,
+.contact-anchor:focus-visible,
+.social-contact-anchor:focus-visible,
+.info-anchor:focus-visible,
+.job-anchor:focus-visible,
+.project-anchor:focus-visible {
+  outline: 3px solid #4dabf7;
+  border-radius: 4px;
+  outline-offset: 4px;
+}
+
+a:focus::after,
+button:focus::after,
+.button:focus::after {
+  display: none;
+}
+
+.button:focus-visible {
+  outline: 3px solid #4dabf7 !important;
+  border-radius: 4px !important;
+  outline-offset: 4px !important;
+  position: relative;
+  z-index: 2;
+}
+
+.button:focus-visible::before {
+  width: 100%;
+}
+
+button:focus-visible,
+input[type="button"]:focus-visible,
+input[type="submit"]:focus-visible {
+  outline: 3px solid #4dabf7 !important;
+  border-radius: 4px !important;
+  outline-offset: 4px !important;
+}
+
 .home {
   border: none;
   display: inline-block;
@@ -121,7 +169,6 @@ a {
   outline: none;
 }
 
-/* The spreading background effect */
 .button::before {
   content: '';
   position: absolute;
