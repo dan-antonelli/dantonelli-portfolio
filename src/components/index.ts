@@ -1,3 +1,4 @@
+export { default as FlexContainer } from './FlexContainer';
 export { default as Background } from './Background';
 export { default as Contact } from './Contact';
 export { default as Footer } from './Footer';

@@ -524,6 +524,14 @@ footer p {
   transform: rotate(25deg);
 }
 
+nav.container {
+  max-height: 90px;
+  height: 80px;
+  margin-bottom: 2rem !important;
+  display: flex;
+  align-items: center;
+}
+
 /* Tablet styles */
 @media (max-width: 1024px) {
   .container {
@@ -556,6 +564,12 @@ footer p {
 
 /* Mobile styles */
 @media (max-width: 640px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
   .container {
     width: 95%;
   }
