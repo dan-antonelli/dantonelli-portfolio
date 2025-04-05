@@ -429,6 +429,25 @@ a:focus {
   text-underline-offset: 2px;
 }
 
+.project::after, .job::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 101%;
+  height: 101%;
+  border: 2px solid #000;
+  z-index: -1;
+  background-color: #FFF;
+  background-image: repeating-linear-gradient(
+    45deg,
+    white,
+    white 3px,
+    #d9d9d9 3px,
+    #d9d9d9 6px
+  );
+}
+
 footer {
   margin-top: auto;
   padding: 2rem 0;
