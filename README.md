@@ -13,6 +13,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - add contact form
 - add contact to each page?
 - add resume page as reference
+- resume: more info as dropdown
 - download CV
 - bolden technology text
 - resume: footer to bottom
