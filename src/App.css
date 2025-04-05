@@ -158,7 +158,7 @@ a:focus::after {
   pointer-events: none;
 }
 
-.project-image-anchor {
+.project-image-anchor, .job-image-anchor {
   border: none;
   padding: 0;
   font-size: initial;
@@ -168,19 +168,19 @@ a:focus::after {
   height: 100%;
 }
 
-.project-image-anchor:hover {
+.project-image-anchor:hover, .job-image-anchor:hover {
   cursor: pointer;
 }
 
-.project-image-anchor:focus {
+.project-image-anchor:focus, .job-image-anchor:focus {
   outline: none;
 }
 
-.project-image-anchor:focus::after {
+.project-image-anchor:focus::after, .job-image-anchor:focus::after {
   display: none;
 }
 
-.project-image-anchor:focus-visible {
+.project-image-anchor:focus-visible, .job-image-anchor:focus-visible {
   outline: none;
 }
 
@@ -324,14 +324,14 @@ a:focus::after {
   margin-bottom: 2cqi;
 }
 
-.project {
+.project, .job {
   border: 2px solid #000;
   position: relative;
   background-color: #f8f8f8;
   margin-bottom: 2rem;
 }
 
-.project-description-container {
+.project-description-container, .job-description-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -352,7 +352,7 @@ a:focus::after {
   padding: 0px;
 }
 
-.project-title, .project-description {
+.project-title, .project-description, .job-title, .job-description {
   padding: 1rem;
 }
 
@@ -664,11 +664,11 @@ footer p {
     margin-bottom: 2.5rem;
   }
 
-  .project {
+  .project, .job {
     width: 100%;
   }
 
-  .project-title {
+  .project-title, .job-title {
     padding: 1rem;
     background-color: #FFF;
   }
@@ -703,7 +703,7 @@ footer p {
     object-fit: contain;
   }
 
-  .project-title {
+  .project-title, .job-title {
     padding-bottom: 0px;
   }
 

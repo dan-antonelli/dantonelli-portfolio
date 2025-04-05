@@ -12,6 +12,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - bundler?
 - tone down text size
 - maybe include font instead of import?
+- add technologies component
 - reorg component: generic Card and Layout and Button
 - tilt project images on mobile and tablet
 - import orders
