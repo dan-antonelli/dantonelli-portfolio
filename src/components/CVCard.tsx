@@ -25,18 +25,17 @@ export default function CVCard({
     <article className="job">
       <div className="job-date">{date}</div>
       <div className="job-title">
-        <h3>{position}</h3>
+        <h3>
+          {position}
+          <span className="workplace-wrapper">
+            <span className="workplace-at">@</span>
+            <a href={workplaceUrl} target="_blank" rel="noopener noreferrer" className="job-anchor">
+              {workplace}
+            </a>
+          </span>
+        </h3>
       </div>
-      <div>
-        <a
-          href={workplaceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-image-anchor"
-        >
-          {workplace}
-        </a>
-      </div>
+      <div></div>
     </article>
   );
 }

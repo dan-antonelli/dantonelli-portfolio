@@ -341,7 +341,7 @@ a:focus::after {
   font-weight: 700;
   font-size: 1.1rem;
   z-index: 2;
-  transform: rotate(2deg);
+  transform: rotate(4deg);
 }
 
 .project-description-container, .job-description-container {
@@ -461,6 +461,41 @@ a:focus::after {
 
 .social-contact a {
   font-size: 1.2rem;
+}
+
+.job-title h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem;
+  line-height: 1.2;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.workplace-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.workplace-at {
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: relative;
+  top: -2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.job-anchor {
+  border: none;
+  font-size: 1.6rem;
+  padding: 0;
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 footer {
