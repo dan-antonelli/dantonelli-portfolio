@@ -105,7 +105,6 @@ a {
   z-index: -1;
 }
 
-/* Hover effect */
 .button:hover {
   color: #ffffff;
 }
@@ -114,7 +113,6 @@ a {
   width: 100%;
 }
 
-/* Focus styles */
 .button:focus-visible {
   outline: 3px solid #4dabf7;
   outline-offset: 2px;
@@ -129,7 +127,6 @@ a {
   width: 100%;
 }
 
-/* Simple active state for feedback */
 .button:active {
   transform: scale(0.98);
 }
