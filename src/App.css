@@ -393,7 +393,7 @@ a:focus {
   padding: 0px;
 }
 
-.project-title, .project-description, .job-title, .job-description {
+.project-title, .project-description, .job-description {
   padding: 1rem;
 }
 
@@ -524,6 +524,18 @@ a:focus {
     #d9d9d9 3px,
     #d9d9d9 6px
   );
+}
+
+.job-meta {
+  padding: 0.1rem 1rem;
+}
+
+.job-meta p {
+  font-weight: 700;
+}
+
+.job-summary {
+  padding: 1rem;
 }
 
 footer {

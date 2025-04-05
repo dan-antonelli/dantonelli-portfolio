@@ -10,6 +10,10 @@ Please ensure your editor is configured to use LF line endings when working on t
 
 - SEO
 - bundler?
+- add contact form
+- add contact to each page?
+- download CV
+- bolden technology text
 - tone down text size
 - maybe include font instead of import?
 - add technologies component

@@ -7,7 +7,7 @@ interface Props {
   city: string;
   country: string;
   summary: string;
-  description: string[];
+  description?: string[];
 }
 
 export default function CVCard({
@@ -19,7 +19,6 @@ export default function CVCard({
   city,
   country,
   summary,
-  description,
 }: Props) {
   return (
     <article className="job">
@@ -40,6 +39,12 @@ export default function CVCard({
             </a>
           </span>
         </h3>
+      </div>
+      <div className="job-meta">
+        <p>{`${location} | ${city} @ ${country}`}</p>
+      </div>
+      <div className="job-summary">
+        <p>{summary}</p>
       </div>
       <div></div>
     </article>
