@@ -61,6 +61,37 @@ a {
   font-weight: 500;
 }
 
+.home img {
+  transition: transform 0.5s ease;
+}
+
+.home:hover img,
+.home:focus img {
+  transform: rotate(360deg);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.home:focus-visible {
+  outline: 3px solid #4dabf7;
+  border-radius: 4px;
+  outline-offset: 4px;
+}
+
+.home {
+  border: none;
+  display: inline-block;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.home:hover {
+  transform: scale(1.05);
+}
+
+.home:active {
+  transform: scale(0.60);
+}
+
 .button {
   border: 3.5px solid #000;
   position: relative;
