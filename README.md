@@ -14,6 +14,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - add contact to each page?
 - download CV
 - bolden technology text
+- resume: footer to bottom
 - tone down text size
 - maybe include font instead of import?
 - add technologies component
