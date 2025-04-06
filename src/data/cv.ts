@@ -20,8 +20,7 @@ export const jobs: Job[] = [
     date: '2024 - present',
     city: 'Budapest',
     country: 'Hungary',
-    summary: `Developing **Secure File Sharing**, a Google Drive-like file sharing web application focused on security. The app is developed in **React
-+ TypeScript**, serving thousands of users.`,
+    summary: `Developing the frontend of **Bank of Ireland's new netbank application** from the ground up using **React and TypeScript**.`,
   },
   {
     id: 2,
