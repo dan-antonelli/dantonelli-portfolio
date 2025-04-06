@@ -344,7 +344,7 @@ a:focus {
   border: 2px solid #000;
 }
 
-.projects {
+.projects, .tech {
   margin-top: 6rem;
 }
 
@@ -352,7 +352,11 @@ a:focus {
   margin-bottom: 2cqi;
 }
 
-.project, .job {
+.tech-wrapper {
+  padding: 1rem;
+}
+
+.project, .job, .tech {
   border: 2px solid #000;
   position: relative;
   background-color: #f8f8f8;
@@ -480,7 +484,7 @@ a:focus {
   font-size: 1.2rem;
 }
 
-.job-title h3 {
+.job-title h3, .tech-title h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -517,7 +521,7 @@ a:focus {
   text-underline-offset: 2px;
 }
 
-.project::after, .job::after {
+.project::after, .job::after, .tech::after {
   content: '';
   position: absolute;
   top: 8px;
@@ -829,5 +833,30 @@ nav.container {
 
   .project-links {
     padding-bottom: 6px;
+  }
+
+  .tech {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tech-title {
+    padding: 1rem;
+    background-color: #FFF;
+  }
+
+  .tech-title h3 {
+    padding-bottom: 0px;
+  }
+
+  .tech-wrapper {
+    padding: 1rem;
+    background-color: #FFF;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .tech h3 {
+    text-align: center;
   }
 }
