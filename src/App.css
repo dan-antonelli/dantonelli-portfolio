@@ -598,40 +598,6 @@ footer p {
   display: inline-block;
 }
 
-.background-shapes {
-  position: fixed;
-  top: 150px;
-  left: 0;
-  width: 100%;
-  height: calc(100% - 150px);
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.shape {
-  position: absolute;
-  opacity: 0.4;
-}
-
-.square {
-  top: 5%;
-  left: 25%;
-  transform: rotate(-15deg);
-}
-
-.circle {
-  top: 8%;
-  left: 55%;
-  transform: rotate(15deg);
-}
-
-.triangle {
-  top: 25%;
-  left: 40%;
-  transform: rotate(25deg);
-}
-
 nav.container {
   max-height: 90px;
   height: 80px;
