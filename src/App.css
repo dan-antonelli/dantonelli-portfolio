@@ -359,6 +359,10 @@ a:focus {
   margin-bottom: 2rem;
 }
 
+.job {
+  margin-bottom: 3rem;
+}
+
 .job-date {
   position: absolute;
   top: -15px;
@@ -395,6 +399,10 @@ a:focus {
 
 .project-title, .project-description, .job-description {
   padding: 1rem;
+}
+
+.project-title {
+  color: #A15153;
 }
 
 .project-image-container {
@@ -481,6 +489,7 @@ a:focus {
   font-size: 2rem;
   margin: 0;
   padding: 1rem;
+  color: #A15153;
 }
 
 .workplace-wrapper {
@@ -496,6 +505,7 @@ a:focus {
   top: -2px;
   margin-right: 2px;
   margin-left: 2px;
+  color: #000;
 }
 
 .job-anchor {
@@ -532,6 +542,7 @@ a:focus {
 
 .job-meta p {
   font-weight: 700;
+  font-style: italic;
 }
 
 .job-summary {
