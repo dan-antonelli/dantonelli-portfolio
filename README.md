@@ -11,6 +11,7 @@ Please ensure your editor is configured to use LF line endings when working on t
 - SEO
 - bundler?
 - add contact form
+- contact card/menu item
 - add contact to each page?
 - add resume page as reference
 - resume: more info as dropdown
