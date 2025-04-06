@@ -1,3 +1,5 @@
+import { useTextFormatter } from '@/hooks/useTextFormatter';
+
 interface Props {
   position: string;
   workplace: string;
@@ -7,7 +9,6 @@ interface Props {
   city: string;
   country: string;
   summary: string;
-  description?: string[];
 }
 
 export default function CVCard({
@@ -20,6 +21,8 @@ export default function CVCard({
   country,
   summary,
 }: Props) {
+  const { formatText } = useTextFormatter();
+
   return (
     <article className="job">
       <div className="job-date">{date}</div>
@@ -44,7 +47,7 @@ export default function CVCard({
         <p>{`${location} | ${city} @ ${country}`}</p>
       </div>
       <div className="job-summary">
-        <p>{summary}</p>
+        <p>{formatText(summary)}</p>
       </div>
       <div></div>
     </article>

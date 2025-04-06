@@ -538,6 +538,11 @@ a:focus {
   padding: 1rem;
 }
 
+.emphasized-text {
+  font-weight: 700;
+  color: #000;
+}
+
 footer {
   margin-top: auto;
   padding: 2rem 0;
