@@ -1,6 +1,6 @@
 import { useCopyToClipboard } from '@hooks/useCopyToClipboard';
 
-export default function Contact() {
+export default function ContactCard() {
   const email = 'danielanonelli.official@gmail.com';
   const { showCopied, copyToClipboard } = useCopyToClipboard();
 

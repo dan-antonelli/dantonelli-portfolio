@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useScrollToContact } from '@/hooks/useScrollToContact';
 
 export default function Navbar() {
+  const { handleContactClick } = useScrollToContact();
+
   return (
     <nav className="container">
       <Link to="/" className="home" title="home">
@@ -13,6 +16,9 @@ export default function Navbar() {
         <Link to="/cv" className="button" title="cv">
           résumé
         </Link>
+        <a href="#contact" className="button" title="contact" onClick={handleContactClick}>
+          contact
+        </a>
       </div>
     </nav>
   );

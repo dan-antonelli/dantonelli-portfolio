@@ -1,4 +1,4 @@
-import Contact from './Contact';
+import ContactCard from './ContactCard';
 import Hero from './Hero';
 import Projects from './Projects';
 import TechCard from './TechCard';
@@ -9,7 +9,7 @@ export default function Main() {
       <Hero />
       <TechCard />
       <Projects isPreview />
-      <Contact />
+      <ContactCard />
     </main>
   );
 }

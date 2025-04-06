@@ -1,6 +1,6 @@
 export { default as FlexContainer } from './FlexContainer';
 export { default as Background } from './Background';
-export { default as Contact } from './Contact';
+export { default as ContactCard } from './ContactCard';
 export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
 export { default as Main } from './MainContent';
