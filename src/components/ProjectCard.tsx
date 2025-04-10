@@ -20,7 +20,7 @@ export default function ProjectCard({
       </div>
       <div className="project-image-container">
         <a
-          href={`/${projectUrl}`}
+          href={projectUrl ? projectUrl : '#'}
           target="_blank"
           rel="noopener noreferrer"
           className="project-image-anchor"
@@ -32,7 +32,7 @@ export default function ProjectCard({
         <p className="project-description">{description}</p>
         <div className="project-links">
           <a
-            href={`/${projectUrl}`}
+            href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
             title="site"
@@ -41,7 +41,7 @@ export default function ProjectCard({
             site
           </a>
           <a
-            href={`/${githubUrl}`}
+            href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             title="github"
