@@ -11,33 +11,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install and Build 🔧
         run: |
           npm ci
           npm run build
 
-      - name: Copy sitemap.xml to build directory
-        run: cp ./public/sitemap.xml build/
+      # - name: Copy sitemap.xml to build directory
+      #   run: cp ./public/sitemap.xml build/
 
-      - name: Copy robots.txt to build directory
-        run: cp ./public/robots.txt build/
+      # - name: Copy robots.txt to build directory
+      #   run: cp ./public/robots.txt build/
 
-      - name: Copy avatar.jpg to build directory
-        run: cp ./public/avatar.jpg build/
+      # - name: Copy avatar.jpg to build directory
+      #   run: cp ./public/avatar.jpg build/
 
-      - name: Copy favicon.ico to build directory
-        run: cp ./public/favicon.ico build/
+      # - name: Copy favicon.ico to build directory
+      #   run: cp ./public/favicon.ico build/
 
-      - name: Copy home.png to build directory
-        run: cp ./public/home.png build/
+      # - name: Copy home.png to build directory
+      #   run: cp ./public/home.png build/
 
-      - name: Copy projects folder to build directory
-        run: cp ./public/projects/ build/
+      # - name: Copy projects folder to build directory
+      #   run: cp ./public/projects/ build/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: public
           branch: gh-pages
