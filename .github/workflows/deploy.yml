@@ -1,54 +1,51 @@
-name: Build and Deploy
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
           cache: 'npm'
-
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
-
-      - name: Setup for SPA routing and fix MIME types 📄
-        run: |
-          cp dist/index.html dist/404.html
-          # Create a no-jekyll file to disable GitHub Pages processing
-          touch dist/.nojekyll
-
-          # Create a custom _headers file to set correct MIME types
-          echo "/*" > dist/_headers
-          echo "  Access-Control-Allow-Origin: *" >> dist/_headers
-          echo "" >> dist/_headers
-          echo "/*.js" >> dist/_headers
-          echo "  Content-Type: application/javascript" >> dist/_headers
-          echo "" >> dist/_headers
-          echo "/*.mjs" >> dist/_headers
-          echo "  Content-Type: application/javascript" >> dist/_headers
-
-          # Create _redirects file for better SPA handling
-          echo "/* /index.html 200" > dist/_redirects
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: dist
-          branch: gh-pages
-          clean-exclude: |
-            .nojekyll
-            _headers
-            _redirects
+          # Upload dist folder
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
