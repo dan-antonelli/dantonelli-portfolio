@@ -1,43 +1,51 @@
-name: Build and Deploy
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
+    branches: ['gh-pages']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
-
-      - name: Copy sitemap.xml to build directory
-        run: cp ./public/sitemap.xml build/
-
-      - name: Copy robots.txt to build directory
-        run: cp ./public/robots.txt build/
-
-      - name: Copy avatar.jpg to build directory
-        run: cp ./public/avatar.jpg build/
-
-      - name: Copy favicon.ico to build directory
-        run: cp ./public/favicon.ico build/
-
-      - name: Copy home.png to build directory
-        run: cp ./public/home.png build/
-
-      - name: Copy projects folder to build directory
-        run: cp ./public/projects/ build/
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          folder: build
-          branch: gh-pages
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload dist folder
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

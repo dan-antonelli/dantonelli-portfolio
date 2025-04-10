@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { visualizer } from 'rollup-plugin-visualizer';
+import fs from 'fs';
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
@@ -14,6 +14,12 @@ export default defineConfig(({ mode }) => ({
         gzipSize: true,
         brotliSize: true,
       }),
+    {
+      name: 'create-nojekyll',
+      closeBundle() {
+        fs.writeFileSync('./dist/.nojekyll', '');
+      },
+    },
   ],
   resolve: {
     alias: {
@@ -24,6 +30,7 @@ export default defineConfig(({ mode }) => ({
       '@data': resolve(__dirname, './src/data'),
     },
   },
+  base: '/',
   build: {
     target: 'esnext',
     polyfill: false,
@@ -36,6 +43,10 @@ export default defineConfig(({ mode }) => ({
     },
     rollupOptions: {
       output: {
+        format: 'es',
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],
         },
