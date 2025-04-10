@@ -17,8 +17,6 @@ jobs:
         run: |
           npm ci
           npm run build
-          touch build/.nojekyll
-          cp build/404.html build/index.html
 
       - name: Copy sitemap.xml to build directory
         run: cp ./public/sitemap.xml build/
