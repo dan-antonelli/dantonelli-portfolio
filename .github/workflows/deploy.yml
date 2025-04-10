@@ -13,28 +13,21 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
       - name: Install and Build 🔧
         run: |
           npm ci
           npm run build
 
-      # - name: Copy sitemap.xml to build directory
-      #   run: cp ./public/sitemap.xml build/
-
-      # - name: Copy robots.txt to build directory
-      #   run: cp ./public/robots.txt build/
-
-      # - name: Copy avatar.jpg to build directory
-      #   run: cp ./public/avatar.jpg build/
-
-      # - name: Copy favicon.ico to build directory
-      #   run: cp ./public/favicon.ico build/
-
-      # - name: Copy home.png to build directory
-      #   run: cp ./public/home.png build/
-
-      # - name: Copy projects folder to build directory
-      #   run: cp ./public/projects/ build/
+      - name: Setup for SPA routing 📄
+        run: |
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
