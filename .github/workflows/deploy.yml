@@ -24,13 +24,31 @@ jobs:
           npm ci
           npm run build
 
-      - name: Setup for SPA routing 📄
+      - name: Setup for SPA routing and fix MIME types 📄
         run: |
           cp dist/index.html dist/404.html
+          # Create a no-jekyll file to disable GitHub Pages processing
           touch dist/.nojekyll
+
+          # Create a custom _headers file to set correct MIME types
+          echo "/*" > dist/_headers
+          echo "  Access-Control-Allow-Origin: *" >> dist/_headers
+          echo "" >> dist/_headers
+          echo "/*.js" >> dist/_headers
+          echo "  Content-Type: application/javascript" >> dist/_headers
+          echo "" >> dist/_headers
+          echo "/*.mjs" >> dist/_headers
+          echo "  Content-Type: application/javascript" >> dist/_headers
+
+          # Create _redirects file for better SPA handling
+          echo "/* /index.html 200" > dist/_redirects
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           branch: gh-pages
+          clean-exclude: |
+            .nojekyll
+            _headers
+            _redirects

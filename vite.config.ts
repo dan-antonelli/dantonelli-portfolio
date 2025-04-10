@@ -31,6 +31,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   base: '/',
+  // Update the build options in your vite.config.ts
   build: {
     target: 'esnext',
     polyfill: false,
@@ -43,6 +44,10 @@ export default defineConfig(({ mode }) => ({
     },
     rollupOptions: {
       output: {
+        format: 'es', // Explicitly set the output format
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],
         },
