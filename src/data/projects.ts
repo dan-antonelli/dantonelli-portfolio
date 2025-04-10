@@ -16,7 +16,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/webshop.png`,
     description: 'An e-commerce website built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/webshop',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     description:
       'A tour agency website built for a client using HTML, CSS, and vanilla JavaScript.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/find-your-ways',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/jobs.png`,
     description: 'A job application tracking dashboard built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/jobs',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/cocktails.png`,
     description: 'An application built with React to help you find your favorite cocktail recipes.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/cocktails',
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/tours.png`,
     description: 'A tour agency website built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/tours',
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/menu.png`,
     description: 'An interactive restaurant menu built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/menu',
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/color-generator.png`,
     description: 'A color palette generator built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/color-generator',
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/lorem-ipsum.png`,
     description: 'A Lorem Ipsum text generator built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/lorem-ipsum',
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/cart.png`,
     description: 'A shopping cart component for a fictional e-commerce site built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/cart',
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/todo.png`,
     description: 'A task management application built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/todos',
   },
   {
     id: 12,
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/sidebar-and-modal.png`,
     description: 'Interactive sidebar and modal components built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/sidebar-and-modal',
   },
   {
     id: 13,
@@ -105,6 +105,6 @@ export const projects: Project[] = [
     imagePath: `${imagePathPrefix}/carousel.png`,
     description: 'An interactive carousel component built with React.',
     projectUrl: '',
-    githubUrl: '',
+    githubUrl: 'https://github.com/dan-antonelli/slider',
   },
 ];
