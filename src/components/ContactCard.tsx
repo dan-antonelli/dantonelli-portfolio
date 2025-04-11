@@ -9,8 +9,8 @@ export default function ContactCard() {
   };
 
   return (
-    <section className="contact-container">
-      <div className="contact-box">
+    <section id="contact" className="contact-container">
+      <div id="contact-box" className="contact-box">
         <p>
           Contact me at
           <a href="#" title="email" onClick={handleEmailClick} className="contact-anchor">
