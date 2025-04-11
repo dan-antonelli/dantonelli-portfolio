@@ -309,11 +309,59 @@ a:focus {
 }
 
 .info {
+  position: relative;
   border: 2px solid #000;
   font-size: 1.125rem;
   line-height: 1.75rem;
   padding: 32px 24px;
   grid-area: info;
+}
+
+.info::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent;
+  z-index: -1;
+
+  background-image: repeating-linear-gradient(
+    50deg,
+    rgba(220, 220, 220, 0.3),
+    rgba(220, 220, 220, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 10px
+  );
+
+  -webkit-mask: linear-gradient(to top right, transparent 50%, #000 50.5%);
+  mask: linear-gradient(to top left, transparent 50%, #000 50.5%);
+}
+
+.info::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  z-index: -1;
+
+  background-image: repeating-linear-gradient(
+    80deg,
+    rgba(200, 200, 200, 0.3),
+    rgba(200, 200, 200, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 10px
+  );
+
+  width: 200px;
+  height: 200px;
 }
 
 .info p {
