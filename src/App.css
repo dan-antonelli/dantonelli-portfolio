@@ -80,13 +80,12 @@ a {
 .button:focus-visible,
 a:focus-visible {
   outline: 3px solid #4dabf7;
-  border-radius: 4px; /* Consistent with home focus style */
-  outline-offset: 4px; /* Consistent with home focus style */
+  border-radius: 4px;
+  outline-offset: 4px;
   position: relative;
   transition: outline-color 0.2s ease-in-out;
 }
 
-/* Override any conflicting styles */
 .project-image-anchor:focus-visible,
 .job-image-anchor:focus-visible,
 .contact-anchor:focus-visible,
@@ -489,6 +488,7 @@ a:focus {
   align-items: center;
   padding: 3rem 0;
   margin-top: auto;
+  position: relative;
 }
 
 .contact-box {
@@ -496,8 +496,55 @@ a:focus {
   padding: 1.5rem 2rem;
   text-align: center;
   max-width: 600px;
-  background-color: rgba(248, 248, 248, 0.9);
+  background-color: #f8f8f8;
   position: relative;
+  z-index: 5;
+}
+
+.contact-container::before,
+.contact-container::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+
+.contact-container::after {
+  bottom: -5px;
+  right: calc(50% - 350px);
+  width: 200px;
+  height: 200px;
+  background-image: repeating-linear-gradient(
+    30deg,
+    rgba(220, 220, 220, 0.3),
+    rgba(220, 220, 220, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 10px
+  );
+
+  -webkit-mask: linear-gradient(to top left, transparent 50%, #000 50.5%);
+  mask: linear-gradient(to top left, transparent 50%, #000 50.5%);
+  z-index: 1;
+}
+
+.contact-container::before {
+  top: 60px;
+  left: calc(50% - 350px);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: repeating-linear-gradient(
+    80deg,
+    rgba(220, 220, 220, 0.3),
+    rgba(220, 220, 220, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 5px,
+    rgba(240, 240, 240, 0.3) 10px
+  );
+  z-index: 1;
+}
+
+.contact-box::before,
+.contact-box::after {
+  display: none;
 }
 
 .copied-notification {
@@ -896,5 +943,31 @@ nav.container {
 
   .tech h3 {
     text-align: center;
+  }
+
+  .contact-container::after {
+    display: none;
+  }
+
+  .contact-container::before {
+    content: '';
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block !important;
+    opacity: 0.7;
+    background-image: repeating-linear-gradient(
+      80deg,
+      rgba(220, 220, 220, 0.4),
+      rgba(220, 220, 220, 0.4) 5px,
+      rgba(240, 240, 240, 0.4) 5px,
+      rgba(240, 240, 240, 0.4) 10px
+    );
+    z-index: 1;
+    position: absolute !important;
+    visibility: visible !important;
   }
 }
