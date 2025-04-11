@@ -14,7 +14,7 @@ export default function ContactCard() {
         <p>
           Contact me at
           <a href="#" title="email" onClick={handleEmailClick} className="contact-anchor">
-            danielanonelli.official@gmail.com
+            danielantonelli.official@gmail.com
           </a>
         </p>
         <div className="social-contact">
