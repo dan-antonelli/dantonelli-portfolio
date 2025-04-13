@@ -714,26 +714,28 @@ nav.container {
 
 @keyframes highlightContact {
   0% {
-    outline: 3px solid transparent;
+    border-color: #000;
     transform: scale(1);
   }
   20% {
-    outline: 3px solid #e63946;
+    border-color: #e63946;
+    border-width: 3px;
     transform: scale(1.02);
   }
   80% {
-    outline: 3px solid #e63946;
+    border-color: #e63946;
+    border-width: 3px;
     transform: scale(1.02);
   }
   100% {
-    outline: 3px solid transparent;
+    border-color: #000;
+    border-width: 2px;
     transform: scale(1);
   }
 }
 
 .contact-highlight {
   animation: highlightContact 2s ease-in-out;
-  outline-offset: 4px;
 }
 
 /* Tablet styles */
